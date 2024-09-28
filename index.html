@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body id="body">
+    <header class="sticky top-0">
+        <div class="bg-[#f9f7f3dd] backdrop-blur-sm">
+            <nav class="container max-sm:px-3 mx-auto py-4 flex items-center gap-2 justify-between ">
+                <div>
+                    <button id="blog" class="bg-green-500 text-white py-2 px-7 rounded-lg">Blog</button>
+                </div>
+                <div class="flex justify-center max-sm:flex-col  items-center gap-2">
+                    <div class="w-10">
+                        <img class="" src="images/donate 1.png" alt="">
+                    </div>
+                    
+                    <h2 class="font-bold lg:text-xl max-sm:text-center">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="images/Currency.png" alt="">
+                    <p id="mainTk" class="font-bold">5000</p>
+                    <p class="font-bold">BDT</p>
+                </div>
+            </nav>
+        </div>
+        <div class="bg-[#ffffffef] pb-5 backdrop-blur-sm">
+            <div class="container max-sm:px-3 mx-auto pt-14 flex items-center gap-2 justify-center ">
+                <button id="btn-donation" class=" bg-green-500 text-black py-2 px-7 rounded-lg  border-slate-400">Donation</button>
+                <button id="btn-history" class=" text-black py-2 px-7 rounded-lg border border-slate-400">History</button>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <main class="container max-sm:px-3 mx-auto ">
+        <div id="donation-section" class="">
+            <section class="grid lg:grid-flow-col lg:grid-cols-2 gap-8 p-5 rounded-3xl border  border-slate-400 mt-7">
+                <div>
+                    <img class="w-full" src="images/noakhali.png" alt="">
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-center gap-2 bg-[#F3F3F3] w-fit px-3 py-1 rounded-md">
+                        <img src="images/Currency.png" alt="">
+                        <p id="noakhali" class="font-bold">0</p>
+                        <p class="font-bold">BDT</p>
+                    </div>
+                    <h2 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="amount1" class="border border-inherit p-3 rounded-md" type="text" placeholder="Write Donation 1">
+                    <button id="btn-donate1" class="bg-green-500 text-white py-2 px-7 rounded-lg w-full">Donate Now</button>
+                </div>
+            </section>
+            <section class="grid lg:grid-flow-col lg:grid-cols-2 gap-8 p-5 rounded-3xl border  border-slate-400 mt-7">
+                <div>
+                    <img class="w-full" src="images/feni.png" alt="">
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-center gap-2 bg-[#F3F3F3] w-fit px-3 py-1 rounded-md">
+                        <img src="images/Currency.png" alt="">
+                        <p id="feni" class="font-bold">0</p>
+                        <p class="font-bold">BDT</p>
+                    </div>
+                    <h2 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="amount2" class="border border-inherit p-3 rounded-md" type="text" placeholder="Write Donation Amount">
+                    <button id="btn-donate2" class="bg-green-500 text-white py-2 px-7 rounded-lg w-full">Donate Now</button>
+                </div>
+            </section>
+            <section class="grid lg:grid-flow-col lg:grid-cols-2 gap-8 p-5 rounded-3xl border  border-slate-400 mt-7">
+                <div>
+                    <img class="w-full" src="images/quota-protest.png" alt="">
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-center gap-2 bg-[#F3F3F3] w-fit px-3 py-1 rounded-md">
+                        <img src="images/Currency.png" alt="">
+                        <p id="quota" class="font-bold">0</p>
+                        <p class="font-bold">BDT</p>
+                    </div>
+                    <h2 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="amount3" class="border border-inherit p-3 rounded-md" type="text" placeholder="Write Donation Amount">
+                    <button id="btn-donate3" class="bg-green-500 text-white py-2 px-7 rounded-lg w-full">Donate Now</button>
+                </div>
+            </section>
+        </div>
+        <div id="histry-section" class="hidden">
+            
+        </div>
+        
+    </main>
+    <div id="popup" class="hidden fixed top-0 h-screen w-screen bg-[#00000030] flex justify-center items-center">
+        <div class="w-96 bg-white text-center rounded-2xl p-6">
+            <h2 class="font-bold text-xl">Congratulations</h2>
+            <img class="w-10 mx-auto" src="images/Currency.png" alt="">
+            <p class="mt-4">you have donated for humankind</p>
+            <h2 class="font-bold text-xl">successfully</h2>
+            <button id="close_popup" class="bg-gray-200 px-5 py-2 rounded-lg mt-4">close confarmation</button>
+
+        </div>
+    </div>
+    <script src="function.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

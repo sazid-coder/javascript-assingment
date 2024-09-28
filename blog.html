@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 5</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body id="body">
+    <header class="sticky top-0">
+        <div class="bg-[#f9f7f3dd] backdrop-blur-sm">
+            <nav class="container max-sm:px-3 mx-auto py-4 flex items-center gap-2 justify-between ">
+                <div>
+                    <button id="home" class="bg-green-500 text-white py-2 px-7 rounded-lg">Home</button>
+                </div>
+                <div class="flex justify-center max-sm:flex-col  items-center gap-2">
+                    <div class="w-10">
+                        <img class="" src="images/donate 1.png" alt="">
+                    </div>
+                    
+                    <h2 class="font-bold lg:text-xl max-sm:text-center">Donate Bangladesh</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="images/Currency.png" alt="">
+                    <p id="mainTk" class="font-bold">5000</p>
+                    <p class="font-bold">BDT</p>
+                </div>
+            </nav>
+        </div>
+
+        
+    </header>
+    <main class="container mx-auto max-sm:px-5">
+        <div class="flex justify-start py-9">
+            <h2 class="my-5 font-bold text-xl">Important FAQ </h2>
+        <img class="w-12 h-12" src="images/faq.gif" alt="">
+        </div>
+
+        <div id="" class="title">
+            <div class="flex justify-between p-5 border border-inherit">
+                <h3 class=" font-bold">What is the Document Object Model (DOM)?</h3>
+                <i class="icon fa-solid fa-caret-up"></i>
+            </div>
+            <div id="" class="discriptiton p-5 border border-inherit hidden">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node is an element, attribute, or piece of content. With the DOM, developers can interact with and manipulate the content, structure, and styling of a web page dynamically using programming languages like JavaScript.</p>
+            </div>
+        </div>
+        <div id="" class="title">
+            <div class="flex justify-between p-5 border border-inherit">
+                <h3 class="font-bold">How do you select an element from the DOM?</h3>
+                <i class="icon fa-solid fa-caret-up"></i>
+
+            </div>
+            <div id="" class="discriptiton p-5 border border-inherit hidden">
+                <p>To select an element from the DOM, you can use these methods:
+
+                    getElementById() <br> 
+                    getElementsByClassName() <br> 
+                    getElementsByTagName() <br> 
+                    querySelector() <br> 
+                    querySelectorAll() <br> </p>
+            </div>
+        </div>
+        <div id="" class="title">
+            <div class="flex justify-between p-5 border border-inherit">
+                <h3 class="font-bold">What is event delegation in the context of the DOM, and why is it useful?</h3>
+                <i class="icon fa-solid fa-caret-up"></i>
+            </div>
+            <div id="" class="discriptiton p-5 border border-inherit hidden">
+                <p>When an event is triggered on a child element, it "bubbles up" through its parent elements. By using event delegation, you can handle events from multiple child elements using just one event listener on a common ancestor (parent element). You can then check which specific child element triggered the event using properties like event.target.</p>
+                <h3>Useful:</h3>
+                <ul>
+                    <li>Improves Performance: Instead of adding multiple event listeners to each child element, event delegation allows you to add a single listener to a parent element, reducing memory usage and improving performance.</li>
+                    <li>Simplifies Dynamic Content Handling: If new child elements are added to the DOM after the page has loaded, event delegation automatically works with them without needing to attach new event listeners.</li>
+                    <li>Cleaner Code: It keeps your code simpler by reducing the number of event listeners and centralizing the event-handling logic.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="" class="title">
+            <div class="flex justify-between p-5 border border-inherit">
+                <h3 class="font-bold">How do you manipulate an element's attributes and styles using the DOM?</h3>
+                <i class="icon fa-solid fa-caret-up"></i>
+
+            </div>
+            <div id="" class="discriptiton p-5 border border-inherit hidden">
+                <p>To manipulate an element's attributes and styles using the DOM, you can use JavaScript methods and properties.</p>
+            </div>
+        </div>
+    </main>
+    <script src="blog.js"></script>
+</body>
+</html>
